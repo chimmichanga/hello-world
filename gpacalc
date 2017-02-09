@@ -1,1 +1,2 @@
 #this is going to be an iterative gpa calculator#
+s=int(input("how many classes did you take?"))
