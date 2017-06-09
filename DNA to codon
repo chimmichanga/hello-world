@@ -1,0 +1,45 @@
+DNA =input('Your sequence: ')
+fh = open(DNA, 'r')
+seq = ''
+fh.readline()
+
+
+
+
+for line in fh:
+    line = str.strip(line)
+    seq = seq + line
+    
+
+length = len(seq)
+
+
+countA = seq.count('A')
+countT = seq.count('T')
+countC = seq.count('C')
+countG = seq.count('G')
+
+
+
+print (seq)
+print ('The length of your sequence is' ,length, 'bases')
+print (float(countA/length))
+print (float(countT/length))
+print (float(countC/length))
+print (float(countG/length))
+
+
+str(seq)
+codon= length-3
+range(codon)
+for i in range(codon):
+    data=seq[i]+seq[i+1]+seq[i+2]
+    print ('The' ,i+1, '3mer is' ,data,) 
+
+
+
+
+ 
+
+
+
